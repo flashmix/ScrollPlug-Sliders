@@ -1,0 +1,196 @@
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        
+        p {
+            border: solid #999;
+            border-width: 3px 0;
+            margin: 30px 40px;
+            padding: 15px;
+            font-size: 22px;
+            color: #999;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            height: 60px;
+            line-height: 60px;
+            background-color: #fff;
+            text-align: right;
+        }
+        
+        #logo {
+            width: 43px;
+            height: 50px;
+            margin: 5px 10px;
+        }
+        
+        #section_1 {
+            height: 100vh
+        }
+        
+        #section_2 {
+            height: 100vh
+        }
+        
+        #section_3 {
+            height: 100vh
+        }
+        
+        #section_4 {
+            height: 100vh;
+            background-color: #1172C6;
+        }
+        
+        .mainMenu {
+            letter-spacing: normal;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav>a {
+            float: left;
+        }
+        
+        .mainMenu li {
+            display: inline-block;
+        }
+        
+        .mainMenu li a {
+            display: block;
+            text-transform: uppercase;
+            padding: 0 20px;
+            color: #222;
+            text-decoration: none;
+            transition: all .3s;
+        }
+        
+        .mainMenu li a:hover {
+            background-color: #999;
+            color: #fff;
+        }
+        
+        section {
+            border-top: 45px;
+            height: 100vh;
+        }
+        
+        section:nth-child(odd) {
+            background-color: #fff
+        }
+        
+        section:nth-child(even) {
+            background-color: #fff;
+        }
+        
+        .toTop {
+            position: fixed;
+            z-index: 100;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            color: #000;
+            background-color: #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .imgBlock {
+            -webkit-background-size: cover;
+            background-size: cover;
+            height: 500px;
+            background-position: center;
+        }
+        
+        .dots {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .dot {
+            display: inline-block;
+            margin: 0 15px;
+            background-color: #999999;
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            border: 1px solid #999999;
+        }
+        
+        .active {
+            border: 1px solid #1172C6;
+            background-color: transparent;
+        }
+        /*Section 2_carousel2*/
+        
+        img {
+            -webkit-background-size: cover;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+        }
+        
+        #slider_container {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+            border-bottom: 5px solid green;
+            overflow: hidden;
+        }
+        
+        .slides {
+            background-color: #fff;
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .slides>li {
+            float: left;
+            height: 100%;
+            background-color: #e1e1e1;
+            font-size: 40px;
+        }
+        
+        .slides li:nth-child(even) {
+            background-color: #3498db;
+        }
+        
+        .controls button {
+            border: none;
+            padding: 10px 40px;
+        }
+        
+        #prevSlide {
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            bottom: 300px;
+            left: 0;
+            color: #000;
+            background-color: #ccc;
+            border-radius: 0px 5px 5px 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        #nextSlide {
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            bottom: 300px;
+            right: 0;
+            color: #000;
+            background-color: #ccc;
+            border-radius: 5px 0px 0px 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }

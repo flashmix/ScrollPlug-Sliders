@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ScrollPlug&Sliders</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#section_1"><img id="logo" src="img/logo.gif"></a>
+        <ul class="mainMenu">
+            <li><a href="#section_1">Slider1</a></li>
+            <li><a href="#section_2">Slider2</a></li>
+            <li><a href="#section_3">Section3</a></li>
+            <li><a href="#section_4">Section4</a></li>
+        </ul>
+    </nav>
+    <section id="section_1">
+        <div id="slider_container">
+            <ul class="slides">
+                <li><img src="img/1.jpg"></li>
+                <li><img src="img/2.jpg"></li>
+                <li><img src="img/3.jpg"></li>
+            </ul>
+            <div class="controls">
+                <button id="prevSlide"><<</button>
+                <button id="nextSlide">>></button>
+            </div>
+        </div>
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloremque laudantium dolorum cupiditate, impedit voluptas, quis nostrum nesciunt voluptate odio debitis itaque culpa repellendus earum ex harum accusantium maiores accusamus?</p>
+    </section>
+    <section id="section_2">
+        <div class="imgBlock"></div>
+        <div class="dots"></div>
+        <section id="section_3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae maiores rem quidem placeat, eligendi quam adipisci voluptate, accusamus laborum fuga asperiores blanditiis delectus, necessitatibus unde possimus deleniti quia! Ut, aut?</p>
+        </section>
+        <section id="section_4"></section>
+
+        <button href="#section_1" class="toTop">Up</button>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/slider1.js"></script>
+        <script src="js/slider2.js"></script>
+        <script src="js/toTop.js"></script>
+
+        <script>
+            $('.mainMenu a').myPlug();
+            $('.toTop').myPlug();
+        </script>
+</body>
+
+</html>
